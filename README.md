@@ -76,21 +76,76 @@ Options of Write, Profile, Search and LogOut
 
 
 ## Tech Stack
+</br> 
 
 **Next.js** -> A Full Stack Framework
 
+Next.js is a React framework that enables several extra features, including server-side rendering and generating static websites. React is a JavaScript library that is traditionally used to build web applications rendered in the client's browser with JavaScript.
+
+Its main features includes :- 
+
+-> Routing
+
+-> Rendering	
+
+-> Data Fetching
+
+-> Styling	- Support for your preferred styling methods, including CSS Modules, Tailwind CSS, and CSS-in-JS
+
+-> Optimizations	
+
+-> TypeScript
+
+</br> 
+
 **Prisma** -> A DataBase Management Tool 
+
+Prisma ORM is a DataBase Management tool that simplifies data interaction, providing a type safe API and query builder for efficient db operations in software development .
+
+It integrates with DB eg MongoDB and provide methods, functions query builder to fetch database.
+
+Prisma + Next.js + MongoDB -> efficient way for data storage
+
+</br> 
 
 **MongoDB** -> No SQL Database
 
+MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. 
+As a document database, MongoDB makes it easy for developers to store structured or unstructured data. It uses a JSON-like format to store documents.
+
+</br> 
+
 **Tailwind CSS** -> CSS Design Framework
+
+Tailwind CSS is an open source CSS framework. The main feature of this library is that, unlike other CSS frameworks like Bootstrap, it does not provide a series of predefined classes for elements such as buttons or tables. Instead, it creates a list of "utility" CSS classes that can be used to style each element by mixing and matching.
+
+</br> 
 
 **ShadCN UI** -> UI Component Library 
 
+Shadcn UI, unlike other popular solutions, it is a collection of reusable components that we can copy and paste into our application. Shadcn UI is built on top of Tailwind CSS and Radix UI, a low-level library consisting of various user interface components. Its priority is to provide accessibility, customisability and developer experience.
+
+Shadcn UI focuses on accessibility and includes components such as buttons, menus, dialogs, tooltips, and more, that are designed to be fully accessible and usable by all users, including those with disabilities. 
+
+</br> 
+
 **NextAuth** -> Authentication Library
+
+NextAuth.js is a complete open-source authentication solution for Next.js applications.
+
+It is designed from the ground up to support Next.js and Serverless.
+
+Designed to work with any OAuth service, it supports OAuth 1.0, 1.0A and 2.0
+Built-in support for many popular sign-in services
+Supports email / passwordless authentication
+Supports stateless authentication with any backend (Active Directory, LDAP, etc)
+Supports both JSON Web Tokens and database sessions
+
+</br> 
 
 **Cloudinary** -> Cloud-based image and video management services
 
+Cloudinary’s award-winning plugin makes automating your image, video, and visual media workflows easy, offering a variety of features. From image and video upload through management, transformation, optimization, and global CDN delivery, all features are offered within the plugin. Users can get started in minutes with a true plug-and-play solution paired with an intuitive onboarding wizard helping deliver optimized and responsive media out-of-the-box.
 
 </br> 
 
