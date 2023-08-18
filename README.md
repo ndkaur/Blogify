@@ -17,7 +17,14 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 # Blogify
 
 ### A full-stack Blog Posting Website 
-includes secure authentication and features such as
+
+</br>
+
+**A Blog Posting Website**  which is user friendly website that allows users to **Login or Register** . The user gets the options of **CREATE, READ, UPDATE, DELETE** the blogs as per interset. The options available for Login are provided by **NextAuth (an authentication framework)** with includes a large number of providers. In this application authentication providers like Google , Github or login by filling the credentials itself by the user are used. The User also gets the flexibilty to upload the profile image which is stored and retrived from the **MongoDB(A No SQL Database)** with the help of **Cloudinary** which is a image and video management system . The interactive UI is provided by the **ShadCN UI** component Library. Libraries like **Bcrypt** is used to encrypt and decrypt the password fro providing the extra safety to the user's account and data . **Tailwind CSS** is used as a CSS Design Framework.
+
+</br>
+
+Includes secure authentication and features such as
 
 -> LogIn/ Register via Google, Github and Credentials
 
