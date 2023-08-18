@@ -1,0 +1,44 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  // mapping the id with the db object id
+  id         String @id @default(auto()) @map("_id") @db.ObjectId
+  name       String
+  email      String @unique
+  password   String?
+  profileUrl String?
+  blogs      Blog[]
+}
+// ? -> optional
+
+model Blog {
+  id           String @id @default(auto()) @map("_id") @db.ObjectId
+  title        String
+  description  String
+  imageUrl     String?
+  User         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId       String   @db.ObjectId
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  Category     Category @relation(fields: [CategoryIds], references: [id])
+  CategoryIds  String   @db.ObjectId
+  location     String?
+}
+
+// on delete = if a user deletes a blog then that blog will also be deleted from the user array
+
+model Category{
+  id   String @id @default(auto()) @map("_id") @db.ObjectId
+  name  String
+  blogs Blog[]
+}
